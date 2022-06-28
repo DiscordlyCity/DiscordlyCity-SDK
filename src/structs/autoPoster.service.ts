@@ -9,7 +9,7 @@ const Poster = (token, client) =>
             "bot":
                 {
                     "botId": client.user.id,
-                    "guildCount": client.guilds.cache.size
+                    "guildsCount": client.guilds.cache.size
                 }
         });
 
@@ -31,7 +31,7 @@ const Poster = (token, client) =>
         })
         .catch((error: AxiosError) =>
         {
-            console.log(error);
+            console.log(error?.request?.data?.message || error);
         });
 }
 
