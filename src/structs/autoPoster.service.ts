@@ -5,7 +5,7 @@ const Poster = (token, client) =>
 {
     const data = JSON.stringify(
         {
-            "accessToken": token,
+            "token": token,
             "bot":
                 {
                     "id": client.user.id,
