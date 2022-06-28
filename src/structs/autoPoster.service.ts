@@ -16,7 +16,7 @@ const Poster = (token, client) =>
     const config =
         {
             method: 'patch',
-            url: 'https://api.discords.city/api/v1/bot/guildCount',
+            url: 'https://api.discords.city/api/v1/bot/guildsCount',
             headers:
                 {
                     'Content-Type': 'application/json'
