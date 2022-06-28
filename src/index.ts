@@ -6,8 +6,8 @@ import { AutoPoster } from './structs/autoPoster.service';
  * @param client Your Discord.js Client
  * @param options Options
  * @example
- * const AutoPoster = require('discordscity')
+ * const AutoPoster = require('discords.city')
  *
- * AutoPoster('DISCORDSCITY_TOKEN', DISCORDJS_CLIENT) // that's it!
+ * AutoPoster('DISCORDS_CITY_TOKEN', DISCORDJS_CLIENT) // that's it!
  */
 export { AutoPoster };

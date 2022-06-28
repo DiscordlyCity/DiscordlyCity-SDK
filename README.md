@@ -13,13 +13,13 @@ Discords City officially NPM Package to make it easier to develop [Discords City
 const { AutoPoster } = require('iran-info');
 
 // @Post bot guilds count
-AutoPoster('DISCORDSCITY_TOKEN', DISCORDJS_CLIENT);
+AutoPoster('DISCORDS_CITY_TOKEN', DISCORDJS_CLIENT);
 
 // @Post bot guilds count in interval
-AutoPoster('DISCORDSCITY_TOKEN', DISCORDJS_CLIENT, { interval: 300000 });
+AutoPoster('DISCORDS_CITY_TOKEN', DISCORDJS_CLIENT, { interval: 300000 });
 
 // @Post bot guilds count in interval and on start of client
-AutoPoster('DISCORDSCITY_TOKEN', DISCORDJS_CLIENT, { interval: 300000, postOnStart: true });
+AutoPoster('DISCORDS_CITY_TOKEN', DISCORDJS_CLIENT, { interval: 300000, postOnStart: true });
 ```
 
 <br />
