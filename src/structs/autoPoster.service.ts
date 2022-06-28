@@ -8,7 +8,7 @@ const Poster = (token, client) =>
             "token": token,
             "bot":
                 {
-                    "id": client.user.id,
+                    "botId": client.user.id,
                     "guildCount": client.guilds.cache.size
                 }
         });
