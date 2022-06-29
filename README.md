@@ -42,7 +42,7 @@ myBot.on("ready", () => {
 ## 📃 Documents
 There is not much to say at the moment, but you will be able to pass an optional object for more functionality such as Interval timer, and more.
 
-```json
+```js
 const options = {
     interval: 300000, // Interval timer in miliseconds
     postOnStart: true // or false, Automaticly post data whenever the client is ready.
