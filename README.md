@@ -9,7 +9,7 @@ Discords City officially NPM Package to make it easier to develop [Discords City
 <br />
 
 ## 📜 Example
-A full working example can be found in [example/index.js](https://github.com/DiscordsCity/DiscordsCity-Package/blob/main/example/index.js)
+A full working example can be found in [example/index.js](https://github.com/DiscordsCity/DiscordsCity-SDK/blob/main/example/index.js)
 
 ```js
 const { Client } = require("discord.js")
@@ -52,4 +52,4 @@ const discordsCity = new DiscordsCity("YOUR_DISCORDS_CITY_TOKEN", myBot, options
 
 <br />
 
-### [MIT License](https://github.com/DiscordsCity/DiscordsCity-Package/blob/main/LICENSE)
+### [MIT License](https://github.com/DiscordsCity/DiscordsCity-SDK/blob/main/LICENSE)
