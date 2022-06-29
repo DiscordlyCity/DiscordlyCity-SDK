@@ -13,7 +13,6 @@ export interface ReqApiData {
 
 export interface ReqResponse {
     status: number
-    code?: string
     message?: string
     guildsCount?: number
 }

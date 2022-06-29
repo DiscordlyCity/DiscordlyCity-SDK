@@ -45,7 +45,7 @@ export default class Client extends BaseClient {
 
     private buildReqApiData(): ReqApiData | Promise<ReqApiData>
     {
-        if(!this.client.uptime)
+        if(!this.client.user?.id)
             throw new Error(`Client is not ready yet.`)
 
         return {
@@ -62,7 +62,7 @@ export default class Client extends BaseClient {
         this.axiosConfig.data = JSON.stringify(data);
         try {
             const res: AxiosResponse<ReqResponse> = await this.axiosClient(this.axiosConfig)
-            if(Number(res.data.code) !== 200)
+            if(Number(res.data?.status) !== 201)
                 throw new Error(res.data?.message)
             else
                 return res.data;
