@@ -1,18 +1,18 @@
-export interface ClientOpts { 
-    interval?: number
-    postOnStart?: boolean
+export interface ClientOpts {
+    interval?: number;
+    postOnStart?: boolean;
 }
 
 export interface ReqApiData {
-    token: string
+    token: string;
     bot: {
-        botId: string
-        guildsCount: number
-    }
+        botId: string;
+        guildsCount: number;
+    };
 }
 
 export interface ReqResponse {
-    status: number
-    message?: string
-    guildsCount?: number
+    status: number;
+    message?: string;
+    guildsCount?: number;
 }
