@@ -13,14 +13,14 @@ A full working example can be found in [example/index.js](https://github.com/Dis
 
 ```js
 const { Client } = require("discord.js")
-const { DiscordCity } = require("discords.city")
+const { DiscordsCity } = require("discords.city")
 
 const myBot = new Client(/*{....}*/)
-const discordCity = new DiscordCity("YOUR_DISCORDS_CITY_TOKEN", myBot)
+const discordsCity = new DiscordsCity("YOUR_DISCORDS_CITY_TOKEN", myBot)
 
 myBot.login("YOUR_DISCORD_TOKEN")
 
-discordCity.autoPost((err, data) => {
+discordsCity.autoPost((err, data) => {
     if (err) {
         console.error(err)
     } else {    
@@ -47,7 +47,7 @@ const options = {
     interval: 300000, // Interval timer in miliseconds
     postOnStart: true // or false, Automaticly post data whenever the client is ready.
 }
-const discordCity = new DiscordCity("YOUR_DISCORDS_CITY_TOKEN", myBot, options)
+const discordsCity = new DiscordsCity("YOUR_DISCORDS_CITY_TOKEN", myBot, options)
 ```
 
 <br />
