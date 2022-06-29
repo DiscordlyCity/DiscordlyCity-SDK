@@ -15,7 +15,7 @@ export default class Client extends BaseClient {
             },
         data: {}
     }
-    constructor(token: string, client: DjsClient, public options: ClientOpts) {
+    constructor(token: string, client: DjsClient, public options?: ClientOpts) {
         super(token, client);
 
 
@@ -96,7 +96,7 @@ export default class Client extends BaseClient {
             })
         });
 
-        if(this.options.postOnStart)
+        if(this.options?.postOnStart)
             this.client.prependOnceListener('ready', async () =>
             {
                 this.postData()
@@ -108,7 +108,7 @@ export default class Client extends BaseClient {
                 })
             });
 
-        if(this.options.interval)
+        if(this.options?.interval)
             setInterval(() => { 
                 this.postData()
                 .then(res => (cb) ? cb(undefined, res) : undefined)
@@ -117,7 +117,7 @@ export default class Client extends BaseClient {
                         cb(e, undefined)
                     else throw e 
                 })
-            }, this.options.interval);
+            }, this.options?.interval);
     }
         
 }
