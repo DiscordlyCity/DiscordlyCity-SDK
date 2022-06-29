@@ -63,7 +63,7 @@ export default class Client extends BaseClient {
         try {
             const res: AxiosResponse<ReqResponse> = await this.axiosClient(this.axiosConfig)
             if(Number(res.data.code) !== 200)
-                throw new Error(res.data.message)
+                throw new Error(res.data?.message)
             else
                 return res.data;
         } catch (error) {
