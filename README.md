@@ -9,6 +9,8 @@ Discords City officially NPM Package to make it easier to develop [Discords City
 <br />
 
 ## 📜 Example
+
+- AutoPost Example
 A full working example can be found in [example/index.js](https://github.com/DiscordsCity/DiscordsCity-SDK/blob/main/example/index.js)
 
 ```js
@@ -32,11 +34,19 @@ myBot.on("ready", () => {
     console.log("I am ready!")
 })
 ```
+
+- Widget Example
+```js
+const { Widget } = require("discords.city")
+const myWidget = new Widget()
+const widgetUrl = myWidget.generateUrl("user" /* Widget Type */, "YOUR_DISCORD_ID", "YOUR_WIDGET_THEME") // Theme is an optional argument.
+console.log(widgetUrl) // ex. https://api.discords.city/api/v1/user/widget/theme-1/488958506280550402
+```
 <br />
 
 ## ✨ Features
 - Post your bot guilds count to Discords City api Automaticly
-
+- Get your User/<del>Bot/Guild</del> Widget
 <br />
 
 ## 📃 Documents

@@ -2,6 +2,7 @@ import BaseClient from './base';
 import { Client as DjsClient } from 'discord.js';
 import { ClientOpts, ReqApiData, ReqResponse } from '../types/types';
 import axios, { AxiosError, AxiosResponse } from 'axios';
+import Widget from './widget';
 
 export default class Client extends BaseClient {
     private readonly axiosClient = axios;
@@ -13,6 +14,9 @@ export default class Client extends BaseClient {
         },
         data: {},
     };
+
+    public readonly widget = new Widget();
+
     constructor(token: string, client: DjsClient, public options?: ClientOpts) {
         super(token, client);
 

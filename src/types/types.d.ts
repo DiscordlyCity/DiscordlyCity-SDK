@@ -1,3 +1,5 @@
+export type WidgetThemes = 'theme-1';
+export type WidgetTypes = 'user';
 export interface ClientOpts {
     interval?: number;
     postOnStart?: boolean;
