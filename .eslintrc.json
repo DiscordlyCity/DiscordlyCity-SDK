@@ -9,16 +9,8 @@
     "extends":
     [
         "eslint:recommended",
-        "plugin:react/recommended",
         "standard"
     ],
-    "settings":
-    {
-        "react":
-        {
-            "version": "detect"
-        }
-    },
     "parser": "@typescript-eslint/parser",
     "parserOptions":
     {
