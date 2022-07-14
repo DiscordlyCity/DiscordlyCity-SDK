@@ -12,9 +12,9 @@ export interface ReqApiData
     token: string;
     bot:
         {
-        botId: string;
-        guildsCount: number;
-    };
+            botId: string;
+            guildsCount: number;
+        };
 }
 
 export interface ReqResponse
