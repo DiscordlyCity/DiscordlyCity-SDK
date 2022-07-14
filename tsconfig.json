@@ -1,15 +1,21 @@
 {
-  "compilerOptions": {
-    "lib": ["es6", "dom", "es2017"],
-    "target": "es5",
-    "module": "commonjs",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "declaration": true,
-    "outDir": "./dist",
-    "noImplicitAny": false,
-    "strict": true
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/tests/*"]
+    "compilerOptions": {
+        "lib": ["es6", "dom", "es2017"],
+        "target": "es5",
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "outDir": "./dist",
+        "noImplicitAny": false,
+        "strict": true,
+        "skipLibCheck": true
+    },
+    "include": ["src"],
+    "exclude": [
+        "node_modules",
+        "./node_modules",
+        "./node_modules/*",
+        "**/tests/*"
+    ]
 }
