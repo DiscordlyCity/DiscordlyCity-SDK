@@ -18,6 +18,6 @@ export default class Widget
 
         if (!this.supportedThemes.includes(theme)) throw new Error(`Theme '${ theme }' is not supported.`);
 
-        return `https://api.discords.city/api/v1/${ type }/widget/${ theme }/${ this.id }`;
+        return `https://api.discordly.city/api/v1/${ type }/widget/${ theme }/${ this.id }`;
     }
 }

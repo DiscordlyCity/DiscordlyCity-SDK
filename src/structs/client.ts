@@ -11,7 +11,7 @@ export default class Client extends BaseClient
     private axiosConfig =
         {
             method: 'patch',
-            url: 'https://api.discords.city/api/v1/bot/guildsCount',
+            url: 'https://api.discordly.city/api/v1/bot/guildsCount',
             headers:
                 {
                     'Content-Type': 'application/json'

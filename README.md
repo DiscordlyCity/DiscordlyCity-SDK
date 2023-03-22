@@ -1,28 +1,28 @@
-# Discords.City
-Discords City officially NPM Package to make it easier to develop [Discords City API](https://api.discords.city/api)
+# discordly.City
+discordly City officially NPM Package to make it easier to develop [discordly City API](https://api.discordly.city/api)
 
 <br />
 
 ## ⚙ Installation
-`npm install discords.city`
+`npm install discordly.city`
 
 <br />
 
 ## 📜 Example
 
 - AutoPost Example
-  A full working example can be found in [example/index.js](https://github.com/DiscordsCity/DiscordsCity-SDK/blob/main/example/index.js)
+  A full working example can be found in [example/index.js](https://github.com/DiscordlyCity/discordlyCity-SDK/blob/main/example/index.js)
 
 ```js
 const { Client } = require('discord.js');
-const { DiscordsCity } = require('discords.city');
+const { DiscordlyCity } = require('discordly.city');
 
 const myBot = new Client(/*{....}*/);
-const discordsCity = new DiscordsCity("YOUR_DISCORDS_CITY_TOKEN", myBot);
+const discordlyCity = new DiscordlyCity('YOUR_DISCORDLY_CITY_TOKEN', myBot);
 
 myBot.login('YOUR_DISCORD_TOKEN');
 
-discordsCity.autoPost((err, data) =>
+discordlyCity.autoPost((err, data) =>
 {
     if (err)
     {
@@ -30,7 +30,7 @@ discordsCity.autoPost((err, data) =>
     }
     else
     {
-        console.log('Discords City Status Updated.');
+        console.log('discordly City Status Updated.');
     }
 });
 
@@ -42,17 +42,17 @@ myBot.on('ready', () =>
 
 - Widget Example
 ```js
-const { Widget } = require('discords.city');
+const { Widget } = require('discordly.city');
 
 const myWidget = new Widget();
 const widgetUrl = myWidget.generateUrl('user' /* Widget Type */, 'YOUR_DISCORD_ID', 'YOUR_WIDGET_THEME'); // Theme is an optional argument.
 
-console.log(widgetUrl); // ex. https://api.discords.city/api/v1/user/widget/theme-1/488958506280550402
+console.log(widgetUrl); // ex. https://api.discordly.city/api/v1/user/widget/theme-1/488958506280550402
 ```
 <br />
 
 ## ✨ Features
-- Post your bot guilds count to Discords City api Automaticly
+- Post your bot guilds count to discordly City api Automaticly
 - Get your User/<del>Bot/Guild</del> Widget
   <br />
 
@@ -66,9 +66,9 @@ const options =
         postOnStart: true // or false, Automaticly post data whenever the client is ready.
     }
 
-const discordsCity = new DiscordsCity("YOUR_DISCORDS_CITY_TOKEN", myBot, options);
+const discordlyCity = new discordlyCity("YOUR_DISCORDLY_CITY_TOKEN", myBot, options);
 ```
 
 <br />
 
-### [MIT License](https://github.com/DiscordsCity/DiscordsCity-SDK/blob/main/LICENSE)
+### [MIT License](https://github.com/discordlyCity/discordlyCity-SDK/blob/main/LICENSE)

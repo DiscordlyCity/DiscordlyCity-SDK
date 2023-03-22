@@ -8,7 +8,7 @@ export default class BaseClient
     {
         if (!token)
 
-            throw new Error('Missing Discords.City Token.');
+            throw new Error('Missing Discordly.City Token.');
 
         if (!client)
 

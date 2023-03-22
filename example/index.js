@@ -1,12 +1,12 @@
 const { Client } = require('discord.js');
-const { DiscordsCity } = require('discords.city');
+const { DiscordlyCity } = require('discordly.city');
 
 const myBot = new Client(/*{....}*/);
-const discordsCity = new DiscordsCity("YOUR_DISCORDS_CITY_TOKEN", myBot);
+const discordlyCity = new DiscordlyCity("YOUR_DISCORDLY_CITY_TOKEN", myBot);
 
 myBot.login('YOUR_DISCORD_TOKEN');
 
-discordsCity.autoPost((err, data) =>
+discordlyCity.autoPost((err, data) =>
 {
     if (err)
     {
@@ -14,7 +14,7 @@ discordsCity.autoPost((err, data) =>
     }
     else
     {
-        console.log('Discords City Status Updated.');
+        console.log('Discordly City Status Updated.');
     }
 });
 
