@@ -30,7 +30,7 @@ discordlyCity.autoPost((err, data) =>
     }
     else
     {
-        console.log('discordly City Status Updated.');
+        console.log('Discordly City Status Updated.');
     }
 });
 
@@ -66,9 +66,9 @@ const options =
         postOnStart: true // or false, Automaticly post data whenever the client is ready.
     }
 
-const discordlyCity = new discordlyCity("YOUR_DISCORDLY_CITY_TOKEN", myBot, options);
+const discordlyCity = new discordlyCity('YOUR_DISCORDLY_CITY_TOKEN', myBot, options);
 ```
 
 <br />
 
-### [MIT License](https://github.com/discordlyCity/discordlyCity-SDK/blob/main/LICENSE)
+### [MIT License](https://github.com/DiscordlyCity/DiscordlyCity-SDK/blob/main/LICENSE)
